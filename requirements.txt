@@ -1,0 +1,12 @@
+django-oscar==1.1.1
+django-oscar-telegram-bot==0.1.0
+django-extensions==1.6.1
+django-debug-toolbar==1.4
+django-debug-toolbar-template-timings==0.6.4
+pycountry==1.19
+gunicorn==19.4.5
+dj-database-url==0.3.0
+psycopg2==2.5.4
+whitenoise==2.0.6
+
+
