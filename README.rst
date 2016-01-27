@@ -25,7 +25,13 @@ Create super user::
 
 	$ python manage.py createsuperuser
 	
-Set correct site domain of your SITE_ID in admin.	
+Use command  ``set_webhook`` to specify the url to receive the incoming updates via webhook::
+
+	$ python manage.py set_webhook
+	
+	
+To set the webhook for telegram you need ``django.contrib.sites`` installed, ``SITE_ID`` configured in settings and
+with it correct value in the DB.
 
 
 Oscar telegram bot
