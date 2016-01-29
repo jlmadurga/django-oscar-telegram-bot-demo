@@ -280,6 +280,16 @@ LOGGING = {
             'propagate': False,
             'level': 'DEBUG',
         },
+        'telegrambot.generic.base': {
+            'handlers': ['console'],
+            'propagate': False,
+            'level': 'INFO',
+        },
+        'telegrambot.generic.responses': {
+            'handlers': ['console'],
+            'propagate': False,
+            'level': 'INFO',
+        },
     }
 }
 
@@ -466,7 +476,7 @@ OSCAR_SHOP_TAGLINE = "Demo"
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # use commands from django-oscar-telegram-bots
-TELEGRAM_BOT_COMMANDS_CONF = "oscar_telegrambot.commands"
+TELEGRAM_BOT_HANDLERS_CONF = "oscar_telegrambot.handlers"
 # use token api
 TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', None)
 
