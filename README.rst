@@ -34,6 +34,10 @@ To set the webhook for telegram you need ``django.contrib.sites`` installed, ``S
 with it correct value in the DB.
 
 
+You can check it using already created bot https://telegram.me/djangooscartelegrambotdemo_bot and the web app
+with the demo already installed https://django-oscar-telegram-bot-demo.herokuapp.com
+
+
 Oscar telegram bot
 ----------------------------------------------------------
 
