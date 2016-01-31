@@ -9,7 +9,7 @@ Installation
 -------------------------------------
 
 The repo is setup for heroku but. So you only need to clone it, create heroku app and push it. 
-Also you need to set one enviroment variable for Telegram token: **TELEGRAM_BOT_TOKEN**
+
 
 To get that token you need to create a Telegram bot https://core.telegram.org/bots.
 

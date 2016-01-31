@@ -477,8 +477,6 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # use commands from django-oscar-telegram-bots
 TELEGRAM_BOT_HANDLERS_CONF = "oscar_telegrambot.handlers"
-# use token api
-TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', None)
 
 
 
