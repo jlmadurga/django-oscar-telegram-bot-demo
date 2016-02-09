@@ -60,17 +60,14 @@ class TestOscarCommands(testcases.BaseTestBot):
                                'text': 'Tron'}                    
                        }
     
-    orders_list = {'in': '/orders',
-                   'out': {'parse_mode': 'Markdown',
-                           'reply_markup': '',
-                           'text': 'order number'}                   
-                   }
-    
-    orders_detail = {'in': '/orders',
-                     'out': {'parse_mode': 'Markdown',
-                             'reply_markup': '',
-                             'text': ''}                        
-                     }
+    orders_list_not_authed = {'in': '/orders',
+                              'out': {'parse_mode': 'Markdown',
+                                      'reply_markup': '',
+                                      'text': "You need an *authenticated chat*" +
+                                              " to perform this action please login" +
+                                              " [here](https://example.com/telegrambot/auth/"
+                                    }                   
+                              }
     
     def test_categories_list(self):
         self._test_message_ok(self.categories_list)
@@ -84,8 +81,5 @@ class TestOscarCommands(testcases.BaseTestBot):
     def test_products_detail(self):
         self._test_message_ok(self.products_detail)
         
-    def test_orders_list(self):
-        self._test_message_ok(self.orders_list)
-        
-    def test_orders_detail(self):
-        self._test_message_ok(self.orders_detail)
+    def test_orders_list_not_authed(self):
+        self._test_message_ok(self.orders_list_not_authed)   
