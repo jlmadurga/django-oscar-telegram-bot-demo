@@ -25,17 +25,18 @@ Create super user::
 
 	$ python manage.py createsuperuser
 	
-Use command  ``set_webhook`` to specify the url to receive the incoming updates via webhook::
-
-	$ python manage.py set_webhook
+To get that token you need to create a Telegram bot https://core.telegram.org/bots. After creating a bot in Telegram Platform, 
+create at least one bot with django admin. Token is the only required field. You may need to provided public key certificate 
+for your server. https://core.telegram.org/bots/self-signed Heroku has https and ssl by default so it is a good option if 
+you dont want to deal with that.
 	
 	
 To set the webhook for telegram you need ``django.contrib.sites`` installed, ``SITE_ID`` configured in settings and
 with it correct value in the DB.
-
-
+	
 You can check it using already created bot https://telegram.me/djangooscartelegrambotdemo_bot and the web app
 with the demo already installed https://django-oscar-telegram-bot-demo.herokuapp.com
+(Some product list do not response because Telegram raises Message too long)
 
 
 Oscar telegram bot
